@@ -1,0 +1,39 @@
+So just started learning about the playwright
+I am using the yarn to install the required pakages of playwright and it is because of I think yarn is more fast
+than the npm pakage so the commnad I have used
+
+first we have to install the yarn and then install the playwright with help of it. so
+
+command to install yarn is
+npm install --global yarn
+
+command to install playwright with yarn
+yarn create playwright
+
+it is install
+it have a project structure like below
+
+- folder structure
+-github\workflows
+this folder is basically from github actions
+-tests
+Whatever the test created are goes inside this folder
+-testexample
+it is basically from the github for test purpose
+-playwright config
+is where you can add configuration for Playwright
+
+other files are not important for now
+
+I have devloped my own project  for goal management system and try to pass my name ,email,
+password through the test case
+
+wright down my first test to send the post request and the api
+http://localhost:8000/api/users/register
+
+
+I am facing the issue to post the request on the route 
+api testing is done 
+
+How to pass the data from one script to another script ?
+How to run the api test in headed mode?
