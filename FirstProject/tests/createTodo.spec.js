@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import config from '../playwright.config';
+import config from '../../playwright.config';
 test("login with existing user and creating todo", async ({ request }) => {
   const response =  await request.post(config.use.baseURL+'/login', {
         data: {
