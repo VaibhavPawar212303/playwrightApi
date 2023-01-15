@@ -64,8 +64,10 @@ test("Navigate to the OrangeHrm Page", async ({ browser }) => {
   await page.locator("//input[@placeholder='Password']").type(Userpassword);
   //click on login button
   await page.getByRole("button", { name: " Login " }).click();
+
   //check  the url
   await expect(page).toHaveURL(
     "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index"
   );
+  await page.pause();
 });
