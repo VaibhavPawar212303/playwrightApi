@@ -1,2 +1,2 @@
-# playwrightApi
-playwright api testing 
+# playwrightApi and the UI testing 
+
