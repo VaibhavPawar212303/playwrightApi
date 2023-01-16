@@ -1,4 +1,4 @@
-const config = require("../../playwright.config");
+const config = require("../playwright.config");
 
 const CreateRandomEmail = () => {
   const random = Math.floor(Math.random() * 100) + 1;
