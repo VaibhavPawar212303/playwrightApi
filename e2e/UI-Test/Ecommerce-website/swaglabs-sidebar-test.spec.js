@@ -1,5 +1,4 @@
-const { test,expect } = require("@playwright/test");
-
+const { test, expect } = require("@playwright/test");
 
 test("Validate the sidebar on swaglab", async ({ browser }) => {
   //create browser page and naviagate
@@ -31,6 +30,7 @@ test("Validate the sidebar on swaglab", async ({ browser }) => {
     sidebarOptions.slice("");
     sideBarOptionsList.push(sidebarOptions);
   }
+  await page.waitForTimeout(3000);
   var count = Math.floor(Math.random() * 3);
   var selectedOption = sideBarOptionsList[count];
   await page.locator("//a[normalize-space()='" + selectedOption + "']").click();
